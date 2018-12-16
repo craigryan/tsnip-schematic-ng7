@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "SpecsSchema",
+  "title": "Specs Schematics Schema",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the component or service to generate spec for",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    },
+    "mocks": {
+      "type": "boolean",
+      "default": true,
+      "description": "Flag to include mocks for unknown services.",
+      "alias": "m"
+    },
+    "stdMocks": {
+      "type": "boolean",
+      "default": true,
+      "description": "Flag to include mocks for standard services (eg http).",
+      "alias": "m"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

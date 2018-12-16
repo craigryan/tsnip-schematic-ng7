@@ -1,0 +1,10 @@
+{
+  "$schema": "./node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "specs": {
+      "description": "Specs schematic.",
+      "factory": "./specs/index#specs",
+      "schema": "./specs/schema.json"
+    }
+  }
+}
