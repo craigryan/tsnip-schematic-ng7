@@ -1,5 +1,5 @@
 {
-  "name": "tsnip",
+  "name": "tsnip-schematic",
   "version": "0.0.0",
   "description": "Test snippet generator for angular",
   "scripts": {
