@@ -12,17 +12,37 @@
         "index": 0
       }
     },
+    "tests": {
+      "type": "boolean",
+      "default": true,
+      "description": "Include test describe/it in snippets",
+      "alias": "t"
+    },
+    "imports": {
+      "type": "boolean",
+      "default": true,
+      "description": "Include imports from snippets",
+      "alias": "i"
+    },
     "mocks": {
       "type": "boolean",
       "default": true,
-      "description": "Flag to include mocks for unknown services.",
-      "alias": "m"
+      "description": "Flag to include mocks for unknown services."
     },
     "stdMocks": {
       "type": "boolean",
       "default": true,
-      "description": "Flag to include mocks for standard services (eg http).",
-      "alias": "m"
+      "description": "Flag to include mocks for standard services (eg http)."
+    },
+    "service": {
+      "type": "boolean",
+      "visible": true,
+      "description": "Parsing a service"
+    },
+    "component": {
+      "type": "boolean",
+      "visible": false,
+      "description": "Parsing a component"
     }
   },
   "required": [

@@ -1,15 +1,21 @@
 {
   "name": "tsnip-schematic",
   "version": "0.0.0",
-  "description": "Test snippet generator for angular",
+  "description": "Tsnip is an Angular Schematic to generate meaningful Test Snippets for existing CLI applications",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && jasmine src/**/*_spec.js"
   },
   "keywords": [
-    "schematics"
+    "schematics",
+    "tsnip",
+    "angular",
+    "specs"
   ],
-  "author": "",
+  "author": "Craig Ryan, Ryanfuse.",
+  "contributors": [
+    "Craig Ryan <cryan.dublin@gmail.com>"
+  ],
   "license": "MIT",
   "schematics": "./src/collection.json",
   "devDependencies": {
